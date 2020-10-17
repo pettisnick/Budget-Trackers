@@ -1,17 +1,18 @@
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
-    "/style.css",
+    "/assets/css/style.css",
     "/manifest.webmanifest",
-    "/index.js",
-    "/indexedDB.js",
-    "/icons/icon-192x192.png",
-    "/icons/icon-512x512.png",
+    "/assets/js/index.js",
+    "/assets/js/indexedDB.js",
+    "/assets/icons/icon-192x192.png",
+    "/assets/icons/icon-512x512.png",
   ];
   
   const STATIC_CACHE = "static-cache-v1";
   const RUNTIME_CACHE = "runtime-cache";
   
+  //Install
   self.addEventListener("install", event => {
     event.waitUntil(
       caches
@@ -21,6 +22,7 @@ const FILES_TO_CACHE = [
     );
   });
   
+  //Activate
   // The activate handler takes care of cleaning up old caches.
   self.addEventListener("activate", event => {
     const currentCaches = [STATIC_CACHE, RUNTIME_CACHE];
@@ -44,6 +46,7 @@ const FILES_TO_CACHE = [
     );
   });
   
+  //Fetch
   self.addEventListener("fetch", event => {
     // non GET requests are not cached and requests to other origins are not cached
     if (
