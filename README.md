@@ -4,7 +4,7 @@
 
 This app allows the user to add expenses and deposits to their budget whether they are online or offline.
 
-
+![budget](https://user-images.githubusercontent.com/65740432/96353785-434d9580-109d-11eb-820f-f08ac78412fe.PNG)
 
 The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 
