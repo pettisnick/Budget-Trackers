@@ -1,4 +1,4 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+PWA Online/Offline Budget Trackers
 
 [Budget Tracker](https://shielded-eyrie-58367.herokuapp.com/)
 
